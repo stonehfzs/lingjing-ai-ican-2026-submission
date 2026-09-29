@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/ronak-create/FableCut",
+  "commit": "4a5b486abc74236959eceb8e2d2d44d9694161aa",
+  "license": "MIT",
+  "integration": "Workspace-isolated server, Chinese UI, library bridge, local captions and proxies."
+}

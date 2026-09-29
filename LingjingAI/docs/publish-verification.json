@@ -1,0 +1,23 @@
+{
+  "tests": {
+    "count": 203,
+    "status": "passed",
+    "command": "python -X utf8 -m unittest discover -s tests"
+  },
+  "deliveryHashes": {
+    "count": 9,
+    "status": "matched"
+  },
+  "runtimeWorkersAdded": [
+    "local_lipsync_worker.py",
+    "musetalk_inference_offline.py"
+  ],
+  "credentialsIncluded": false,
+  "modelWeightsIncluded": false,
+  "githubRepository": "https://github.com/Xiaoyun-0922/xiaoyun-AI",
+  "remoteStatus": "Authenticated target repository verified; upload follows the checks in this record.",
+  "githubVisibility": "private",
+  "product": "灵镜AI",
+  "version": "0.12.0",
+  "date": "2026-09-29"
+}

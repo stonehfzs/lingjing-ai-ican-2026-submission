@@ -1,0 +1,47 @@
+{
+  "baselineTests": 203,
+  "baselineVersion": "0.10.0",
+  "currentVersion": "0.11.0",
+  "voiceGeneration": {
+    "id": "e65c16a9491a4d1fb6204bd89e05e2b3",
+    "status": "succeeded",
+    "duration": 5.36,
+    "progress": {
+      "phase": "complete",
+      "indeterminate": false,
+      "percent": 100
+    },
+    "metadata": {
+      "mode": "design",
+      "modelId": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+      "device": "cuda",
+      "attention": "sdpa",
+      "dtype": "bfloat16",
+      "sampleRate": 24000,
+      "duration": 5.36,
+      "peakVramBytes": 4303227392,
+      "peakReservedVramBytes": 4414504960,
+      "elapsedSeconds": 40.357,
+      "seed": 1234,
+      "temperature": 0.9,
+      "offline": true,
+      "networkBlockedTest": true,
+      "peakAmplitude": 0.68359375,
+      "rms": 0.09305553883314133,
+      "reviewStatus": "not_auditioned"
+    }
+  },
+  "editor": {
+    "splitBefore": 6,
+    "splitAfter": 7,
+    "pasteBefore": 6,
+    "pasteAfter": 7,
+    "export": {
+      "ok": true,
+      "src": "/exports/%E5%B0%8F%E5%85%81%E7%8E%A9AI%20%E5%88%B6%E4%BD%9C%E6%B5%81%E7%A8%8B%E9%A2%84%E6%BC%94_2.mp4"
+    }
+  },
+  "materialRights": "团队已确认参赛及公开展示权",
+  "sourceWorkspaceUnaffected": true
+}

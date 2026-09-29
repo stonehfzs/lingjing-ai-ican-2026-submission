@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "workspaceId": "cangtou-film-v1-0",
+  "style": "真人电影式：自然、克制，有停顿和气息",
+  "status": "proposal_not_cast_not_generated",
+  "sourceSha256": "bb22ff9a648bd2b847b23397a1507cd3ea30979413e598a22a27e7f05f3d9122",
+  "factsSource": "characters.json",
+  "characters": [
+    {
+      "id": "VO_LV_YOUNG",
+      "characterId": "CH_LV",
+      "name": "少年吕臣",
+      "factsAndImage": "17岁，清瘦、晒黑、青布头巾；身份由戍卒、宫役变为苍头军。",
+      "interpretation": "警觉、怕但有行动力。从等命令走向自己承担判断，最后尊重别人的选择。",
+      "identityPrompt": "十七岁男性，变声后的年轻中音，清亮而不尖，声音偏轻却有实气；咬字朴素直接，句尾收得短，想清楚后再接下一句。普通话生活口语，保留年轻人的生涩和身体感；自然电影对白，单人清洁干声。",
+      "imageAssets": [
+        {
+          "id": "REF_LV_YOUNG_FRONT",
+          "path": "@APP_ROOT@\\media\\assets\\7790a8af475e1d19c340.png",
+          "name": "吕臣｜青年正面候选"
+        }
+      ],
+      "auditions": [
+        {
+          "shotId": "M018",
+          "text": "屯长，水。我叫吕臣。",
+          "performancePrompt": "对两名屯长报上来意。先把水递稳，再说名字；紧张来自对方身份，气息略收，不能念成自我介绍广告。"
+        },
+        {
+          "shotId": "M072",
+          "text": "我想走。可走了，那天的事就算过去了？",
+          "performancePrompt": "对照应过自己的庄贾说真话。“我想走”是承认怕；转折前短停，“可走了”像突然想到后果，后半句是真问，不预先带哭腔。"
+        },
+        {
+          "shotId": "M101",
+          "text": "他死了。话没死。",
+          "performancePrompt": "仍对同一个庄大哥回答。先承认“他死了”，短停，再把“话没死”说清；站稳而不拔高，不喊口号。"
+        }
+      ],
+      "status": "written_not_generated",
+      "ageEvidence": "M012与原04_bibles/characters.json；其他约数为剧本人物设定，不作史实年龄声明"
+    },
+    {
+      "id": "VO_LV_ADULT",
+      "characterId": "CH_LV",
+      "name": "成年吕臣／旁白",
+      "factsAndImage": "人物设定约30岁，与少年吕臣同一人；成熟、短髭、深色衣冠。",
+      "interpretation": "回忆亲历，也承认自己当年没能阻止。叙述中仍有人际温度和疑问。",
+      "identityPrompt": "约三十岁男性，自然中音，比少年时期共鸣稍厚但仍保留清亮尾音与短收尾的习惯。语流连贯、字清楚，气息沉稳而松弛，允许思考造成的短停。像对身边熟人谈亲历往事的电影独白，清洁单人干声。",
+      "imageAssets": [
+        {
+          "id": "REF_LV_ADULT_FRONT",
+          "path": "@APP_ROOT@\\media\\assets\\972ad7d501eeb547e792.png",
+          "name": "吕臣｜成年正面候选"
+        }
+      ],
+      "auditions": [
+        {
+          "shotId": "M012",
+          "text": "我叫吕臣。那年十七岁。那天晚上，轮到我给屯长送水。",
+          "performancePrompt": "平常说出自己的名字，想到十七岁时轻停一下，再进入送水那晚。不是历史纪录片报幕；不把每个逗号都拖长。"
+        },
+        {
+          "shotId": "M064",
+          "text": "我没能拦住。最后，还是我擦了那块地。",
+          "performancePrompt": "承认自己没能拦住，声音不急着求谅解。停顿留在“最后”前后最需要思考的一处；末句轻落，不能把自责演成悲情朗诵。"
+        }
+      ],
+      "status": "written_not_generated",
+      "ageEvidence": "M012与原04_bibles/characters.json；其他约数为剧本人物设定，不作史实年龄声明"
+    },
+    {
+      "id": "VO_CS",
+      "characterId": "CH_CS",
+      "name": "陈胜",
+      "factsAndImage": "三十多岁，高颧、晒纹、短乱须，目光亮；称王后仍保有劳动者的手。",
+      "interpretation": "能组织和鼓动同伴，也会认出身边的小人物；权势与失败逐渐改变他对人的态度。",
+      "identityPrompt": "三十五岁上下男性，结实的中音，声音前缘略粗粝，实气充足，字头落点清楚，有向前送出的穿透力。平时能近距离自然交谈，提高音量时不挤成低吼；语句收尾有力但不拖腔。保留劳动者的朴素口吻与人的温度，电影对白干声。",
+      "imageAssets": [
+        {
+          "id": "REF_CS_CONSCRIPT_FRONT",
+          "path": "@APP_ROOT@\\media\\assets\\71d87258422d39cfb3dc.png",
+          "name": "陈胜｜戍卒脸部候选"
+        }
+      ],
+      "auditions": [
+        {
+          "shotId": "M019",
+          "text": "你端了三天水，我今天才看见你的脸。怕不怕？",
+          "performancePrompt": "对送水的少年第一次真正留心。陈述部分是发现，末尾“怕不怕”放轻一点，留出等回答的空隙；没有训话架势。"
+        },
+        {
+          "shotId": "M038",
+          "text": "王侯将相，宁有种乎！",
+          "performancePrompt": "对雨中的戍卒发问，想让人抬头和站起来。用实气把话送到人群，重点在质问与邀请，避免全句同等力度的口号腔。"
+        },
+        {
+          "shotId": "M075",
+          "text": "外面的人，都走了？他们怎么说我？",
+          "performancePrompt": "深夜只剩少年在场。先试探外面的人是否离开，后一句更私密；权威还在，疲惫和想听实话从停顿露出，不更换声音身份。"
+        }
+      ],
+      "status": "written_not_generated",
+      "ageEvidence": "M012与原04_bibles/characters.json；其他约数为剧本人物设定，不作史实年龄声明"
+    },
+    {
+      "id": "VO_ZJ",
+      "characterId": "CH_ZJ",
+      "name": "庄贾",
+      "factsAndImage": "人物设定约30岁，体格厚实、半闭眼；戍卒、车夫和穿秦甲是同一个人。",
+      "interpretation": "最初真切照应少年，后来选择求生并为自己辩护。他的转变不靠突然换成反派声线。",
+      "identityPrompt": "三十岁左右男性，厚实的中低音，口腔共鸣较宽、发声位置松，稍有干哑边缘。说话不抢，句子内部仍连贯，重音落在实际要办的事上；声音里有日常的松懒，不拖每一个字。朴实、近距离的电影对白，清洁单人干声。",
+      "imageAssets": [
+        {
+          "id": "REF_ZJ_CONSCRIPT_FRONT",
+          "path": "@APP_ROOT@\\media\\assets\\7245f92efe438cd8b44a.png",
+          "name": "庄贾｜戍卒脸部候选"
+        }
+      ],
+      "auditions": [
+        {
+          "shotId": "M006",
+          "text": "火留着。别叫它灭。",
+          "performancePrompt": "蓑衣刚替少年挡住雨，火稳定后说。是一句真心照应和实际叮嘱，语气平常，不能提前埋阴冷或不祥的声音。"
+        },
+        {
+          "shotId": "M073",
+          "text": "活下来再说。那块地，总有人去擦。擦干净了，就没人提。",
+          "performancePrompt": "在马厩劝熟悉的少年先活下来。第一句说得实在；谈到擦地时短暂压住情绪，最后像也在给自己找理由；避免慢条斯理地宣讲人生道理。"
+        },
+        {
+          "shotId": "M098",
+          "text": "他杀老申那天，就忘了大泽乡。我不过想活。你还替他卖命？",
+          "performancePrompt": "面对已回来夺城的少年。先拿陈胜伤害故人的事作理由，“我不过想活”露出防御，最后一句把压力推回对方。保持原厚实音色，不突然低吼。"
+        }
+      ],
+      "status": "written_not_generated",
+      "ageEvidence": "M012与原04_bibles/characters.json；其他约数为剧本人物设定，不作史实年龄声明"
+    },
+    {
+      "id": "VO_WG",
+      "characterId": "CH_WG",
+      "name": "吴广",
+      "factsAndImage": "约30岁，壮实、方脸，表情开阔；伤前无鞭痕，受伤后仍是同一人。",
+      "interpretation": "急于找到出路，爽利有热度；照应少年时有幽默和亲近。",
+      "identityPrompt": "三十岁左右男性，明亮饱满的中音，胸腔支撑充足，口腔打开，字头爽利、语流略快于庄贾。笑意能够自然进入声音，收得住、并不一直笑。与同伴交谈有热度和行动感，清楚的生活口语，单人电影干声。",
+      "imageAssets": [
+        {
+          "id": "NEW_WG_PRE",
+          "path": "@APP_ROOT@\\media\\assets\\306d7c3e057f7a9441a0.png",
+          "name": "吴广伤前同脸"
+        }
+      ],
+      "auditions": [
+        {
+          "shotId": "M015",
+          "text": "九百个人，连饭都吃不饱，凭什么信你？",
+          "performancePrompt": "在问同伴具体办法，身体向前，压低音量但话来得快。重点在“凭什么信你”，是要找能做成的办法，不是嘲笑陈胜。"
+        },
+        {
+          "shotId": "M027",
+          "text": "吃。天意也不能浪费。",
+          "performancePrompt": "把鱼给少年，顺口开个只有知情人听懂的玩笑。轻松而短，不用笑声铺满整句。"
+        },
+        {
+          "shotId": "M028",
+          "text": "大楚兴！陈胜王！",
+          "performancePrompt": "用同一个演员的声音扮神秘喊声；神秘感主要靠后期距离和空间处理，不能另外设计妖怪声线。"
+        }
+      ],
+      "status": "written_not_generated",
+      "ageEvidence": "M012与原04_bibles/characters.json；其他约数为剧本人物设定，不作史实年龄声明"
+    },
+    {
+      "id": "VO_LS",
+      "characterId": "CH_LS",
+      "name": "老申",
+      "factsAndImage": "约40岁，瘦黑、晒纹明显，笑和动作较大，衣衫朴素。",
+      "interpretation": "真把陈胜当旧朋友，也懂端水少年的辛苦；不是愚笨的喜剧配角。",
+      "identityPrompt": "四十岁上下男性，偏明亮的中高音，嗓子打开、略有劳作后的粗边，说话带自然笑意与亲近感。起句直接、语流连贯，句尾有生活口语的起伏；声音响亮但不夸张滑稽。普通话有朴素乡土节奏，不指定历史方音，单人清洁干声。",
+      "imageAssets": [
+        {
+          "id": "REF_LS_FRONT",
+          "path": "@APP_ROOT@\\media\\assets\\2c4adf95cc799358e61d.png",
+          "name": "老申｜正面候选"
+        }
+      ],
+      "auditions": [
+        {
+          "shotId": "M051",
+          "text": "小兄弟，站着递就行。我也端过水。",
+          "performancePrompt": "接过杯子时看着少年，像顺手照应小辈，轻松真诚。后一句不是讲大道理，是自己的实际经历。"
+        },
+        {
+          "shotId": "M052",
+          "text": "苟富贵，无相忘。涉，你还记得？那时我们都笑你。",
+          "performancePrompt": "对老友提共同往事，想看他还记不记得。起初亲近，问句真等回应，不把典故念成书面名言。"
+        },
+        {
+          "shotId": "M057",
+          "text": "涉？",
+          "performancePrompt": "笑刚卡住，只叫“涉”。还没完全明白发生什么，眼神在找朋友；先是错愕和不信，不立刻变成嚎哭。"
+        }
+      ],
+      "status": "written_not_generated",
+      "ageEvidence": "M012与原04_bibles/characters.json；其他约数为剧本人物设定，不作史实年龄声明"
+    },
+    {
+      "id": "VO_ZF",
+      "characterId": "CH_ZF",
+      "name": "朱房",
+      "factsAndImage": "约40岁，清瘦，深色袍服和黑冠，动作收束。",
+      "interpretation": "以维护王的威严为由进言，让陈胜作出决定；情绪隐藏在分寸里。",
+      "identityPrompt": "四十岁上下男性，偏干、收束的中音，音域起伏较小，辅音清晰，发声不贴耳低语。句子短，语尾利落，停顿像在斟酌措辞而不是故弄玄虚。近距离正常说话的电影干声，不加阴笑或反派声效。",
+      "imageAssets": [
+        {
+          "id": "REF_ZF_FRONT",
+          "path": "@APP_ROOT@\\media\\assets\\8d1ebcaed85994278ef6.png",
+          "name": "朱房｜独立单人候选"
+        }
+      ],
+      "auditions": [
+        {
+          "shotId": "M055",
+          "text": "此人妄言。说多了，只怕轻了大王的威。",
+          "performancePrompt": "向陈胜进言。第一句简短陈述，后半句以顾虑的方式递出判断；把重点交给“大王的威”，不替陈胜怒斥老申。"
+        }
+      ],
+      "status": "written_not_generated",
+      "ageEvidence": "M012与原04_bibles/characters.json；其他约数为剧本人物设定，不作史实年龄声明"
+    },
+    {
+      "id": "VO_OS",
+      "characterId": "CH_OS",
+      "name": "新阳老奴",
+      "factsAndImage": "老年男性，设定约60岁，微驼，粗麻衣、绳茧，灰白须。",
+      "interpretation": "经历过多次换主人，关心眼前生活能否真的不同；仍保有判断和尊严。",
+      "identityPrompt": "六十岁上下男性，中音偏薄，有轻微干涩和气力不足的边缘，字仍清楚，不持续颤抖。语流按意思分组，长句中自然换一次气，开口稳，不故意拖慢每个字。带生活阅历的普通话口语，保留真实人的清醒与尊严，单人干声。",
+      "imageAssets": [
+        {
+          "id": "REF_OS_FRONT",
+          "path": "@APP_ROOT@\\media\\assets\\1951e5d8f360d125dc46.png",
+          "name": "新阳老奴｜独立单人候选"
+        }
+      ],
+      "auditions": [
+        {
+          "shotId": "M087",
+          "text": "王都死了。人都要回家，你还替谁招人？",
+          "performancePrompt": "对还在招人的少年提出实际问题。“王都死了”是共同知道的事实；最后真想听少年给理由，不是看穿一切的老者训话。"
+        },
+        {
+          "shotId": "M088",
+          "text": "我们这些端水扫地的，换个主人，不还是一样？",
+          "performancePrompt": "看看绳茧再收回手，说的是过过的日子。疲惫藏在呼吸，不靠哭腔；“不还是一样”留一个等回答的尾部。"
+        }
+      ],
+      "status": "written_not_generated",
+      "ageEvidence": "M012与原04_bibles/characters.json；其他约数为剧本人物设定，不作史实年龄声明"
+    },
+    {
+      "id": "VO_QO",
+      "characterId": "CH_QO",
+      "name": "将尉甲",
+      "factsAndImage": "中年男性，红脸、醉眼、厚实体态，油皮斗篷和长剑。",
+      "interpretation": "执行已习惯的期限与处罚，麻木比夸张凶恶更压人。",
+      "identityPrompt": "中年男性，偏硬的中低音，略厚钝，发声有重量但不是低音炮。字句直、尾音短，口腔稍松，仍保持可懂度；日常命令式的平直口吻，普通话电影对白，清洁单人干声。",
+      "imageAssets": [
+        {
+          "id": "REF_QO_FRONT",
+          "path": "@APP_ROOT@\\media\\assets\\533c95b2ad3a5c1f4183.png",
+          "name": "秦将尉｜脸部候选"
+        }
+      ],
+      "auditions": [
+        {
+          "shotId": "M008",
+          "text": "道路不通，已经七日。失期，法皆斩。",
+          "performancePrompt": "勒马停稳后向人群宣布。像念熟悉的规程，平稳说出期限与后果；不靠大吼突出威胁，不含酒嗝或故意含混。"
+        }
+      ],
+      "status": "written_not_generated",
+      "ageEvidence": "M012与原04_bibles/characters.json；其他约数为剧本人物设定，不作史实年龄声明"
+    },
+    {
+      "id": "VO_MILITARY",
+      "characterId": "BG_MILITARY",
+      "name": "军吏画外声",
+      "factsAndImage": "成年军吏的画外短命令；剧本未锁定可见脸或精确年龄。",
+      "interpretation": "对柴火和劳役发出惯常吩咐，功能短促。",
+      "identityPrompt": "普通成年男性，自然中音，字短、实、清楚，起句利落，口气直接。音色独立于陈胜、庄贾和将尉甲；不加特殊身份腔或低频效果，单人清洁干声。",
+      "imageAssets": [],
+      "auditions": [
+        {
+          "shotId": "M009",
+          "text": "柴，省着。",
+          "performancePrompt": "火刚被踩灭，从画外吩咐节省柴火。短句一气说完，“省着”轻微落下；距离感由后期处理，不能读成宣传口号。"
+        }
+      ],
+      "status": "written_not_generated",
+      "ageEvidence": "M012与原04_bibles/characters.json；其他约数为剧本人物设定，不作史实年龄声明"
+    },
+    {
+      "id": "VO_CROWD",
+      "characterId": "BG_CONSCRIPTS",
+      "name": "戍卒群声",
+      "factsAndImage": "多位戍卒逐步响应，包含不同年龄与发声质地；不是单人角色。",
+      "interpretation": "从少数人先回应，到周围人听见并跟上。",
+      "identityPrompt": "合成方案而非单人voice_id：选择数个不同成年男声，分别用实气清楚说“敬受命！”，既有较亮年轻声，也有粗粝壮年声、稍薄年长声。保留轻微起声先后与音高差，形成普通人逐步汇合的响应，不像合唱团或现代整齐口号。每条先留干声，远近和人群空间在后期完成。",
+      "imageAssets": [],
+      "auditions": [
+        {
+          "shotId": "M039",
+          "text": "敬受命！",
+          "performancePrompt": "近处一两个人先接受行动，周围跟上，少年最后抬头。后期安排层次，不能把同一条音频复制十遍。尾声M116精确回用这一条批准混音。"
+        }
+      ],
+      "status": "written_not_generated",
+      "ageEvidence": "M012与原04_bibles/characters.json；其他约数为剧本人物设定，不作史实年龄声明"
+    }
+  ],
+  "note": "音区、共鸣和声线建议属于导演选角提案，不能由形象照片还原唯一真实声音。固定声线与逐句表演分栏。此提案不覆盖当前音色ID或审批状态。"
+}

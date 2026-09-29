@@ -1,0 +1,4 @@
+interface:
+  display_name: "镜序 · 剧本制作工作流"
+  short_description: "剖析任意剧本，完成人物选音、逐镜参考和连续性检查，并回填可视化工作台"
+  default_prompt: "使用 $minimax-storyboard-studio 剖析这份剧本，在独立工作区准备角色、声音试演、分镜参考与连续性，并给出可审阅的制作计划。"

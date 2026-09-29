@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>镜序 · 分镜工作台</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="镜序工作台"><span class="brand-mark">▰</span><span>镜序<span class="brand-en">STORYBOARD STUDIO</span></span></a>
+    <span class="top-divider"></span><input id="projectTitle" class="project-title" aria-label="项目名称" value="未命名项目">
+    <span class="save-state" id="saveState">正在打开…</span>
+    <div class="top-actions"><span class="connection" id="connection"><i></i>连接中</span><button id="importBtn" class="quiet">导入项目</button><button id="exportBtn" class="quiet">导出</button><button id="saveBtn" class="primary compact">保存项目 <kbd>⌘ S</kbd></button></div>
+  </header>
+  <main class="workspace">
+    <aside class="left-panel">
+      <div class="panel-tabs"><button class="active" data-tab="shots">分镜 <span id="shotCount">0</span></button><button data-tab="script">剧本</button></div>
+      <div id="shotsTab" class="tab-pane active"><div class="list-heading"><span>镜头顺序</span><button id="addShotBtn" class="icon-button" title="新增镜头" aria-label="新增镜头">＋</button></div><div id="shotList" class="shot-list"></div><div class="left-bottom"><span class="eyebrow">创作流程</span><p>导入剧本后，让 Codex 拆解镜头。<br>在画布确认，再逐镜生成。</p><button id="openScriptBtn" class="text-button">查看剧本 <span>↗</span></button></div></div>
+      <div id="scriptTab" class="tab-pane"><div class="list-heading"><span>剧本原文</span><button id="importScriptBtn" class="text-button">导入</button></div><textarea id="scriptText" class="script-editor" aria-label="剧本原文" placeholder="在这里粘贴剧本，或导入 .txt / .md 文件。&#10;&#10;保存后，可让 Codex 根据剧本拆解镜头、补充提示词并安排画面顺序。"></textarea><div class="script-footer"><span id="scriptLength">0 字</span><span>分镜由 Codex 编排</span></div><div class="script-guidance">将想法交给 Codex：<br>“请按这个项目的剧本完成分镜，保留角色和场景一致性，并更新画布。”</div><button id="copyBriefBtn" class="secondary">复制给 Codex 的指令</button></div>
+    </aside>
+    <section class="canvas-section" aria-label="分镜画布">
+      <div class="canvas-top"><div><span class="eyebrow">STORYBOARD</span><h1>分镜画布 <span id="canvasCount">00 镜</span></h1></div><div class="canvas-tools"><button id="layoutBtn" class="secondary" title="按镜头顺序横向排列">横向排版</button><button id="fitBtn" class="secondary">适应画布</button></div></div>
+      <div class="external-update" id="externalUpdate" hidden><span>Codex 或其他窗口更新了项目。当前编辑已保留。</span><button id="reloadProjectBtn">载入新版本</button></div>
+      <div id="canvasViewport" class="canvas-viewport" tabindex="0" aria-label="拖动空白处平移，滚轮缩放，点击镜头编辑"><div id="canvasWorld" class="canvas-world"><svg id="connections" class="connections" width="12000" height="8000" aria-hidden="true"></svg><div id="nodes"></div></div><div id="emptyCanvas" class="empty-canvas" hidden><span class="empty-frame">＋</span><h2>从第一个镜头开始</h2><p>新增镜头，或导入剧本交给 Codex 编排。</p><button id="emptyAddBtn" class="primary">新增镜头</button></div></div>
+      <div class="canvas-bottom"><span class="canvas-hint">拖动镜头排列 <b>·</b> 拖动空白平移 <b>·</b> 滚轮缩放</span><div class="zoom-controls"><button id="zoomOutBtn" aria-label="缩小">−</button><span id="zoomLevel">100%</span><button id="zoomInBtn" aria-label="放大">＋</button><span class="zoom-divider"></span><button id="resetZoomBtn" title="恢复100%" aria-label="恢复100%">⤢</button></div></div>
+      <section class="jobs-tray"><button id="jobsToggle" class="jobs-toggle"><span><i class="tiny-dot"></i>生成记录 <b id="jobCount">0</b></span><span id="jobsToggleIcon">⌃</span></button><div id="jobList" class="job-list"></div></section>
+    </section>
+    <aside class="inspector"><div class="inspector-heading"><span>镜头设置</span><span id="selectedNumber" class="eyebrow">—</span></div><div id="noSelection" class="no-selection"><span>↖</span><p>选择画布中的镜头<br>编辑画面与生成设置</p></div><form id="shotForm" hidden autocomplete="off"><div class="inspector-scroll"><div id="timingSummary" class="timing-summary"></div><div class="field-row"><label class="number-field">编号<input name="number" maxlength="16"></label><label>镜头名称<input name="title" maxlength="100"></label></div><label>场景<input name="scene" placeholder="地点 · 时间"></label><div class="field-row"><label>景别<input name="shotType" list="shotTypes" placeholder="选择或输入"></label><label>运镜<input name="camera" list="cameraTypes" placeholder="选择或输入"></label></div><label>画面动作<textarea name="action" rows="3" placeholder="人物、动作、场景变化"></textarea></label><div class="inspector-divider"></div><div class="section-title">生成设置<span class="subtle">MINIMAX DESIGN</span></div><div class="segmented"><button type="button" data-kind="image">静帧图像</button><button type="button" data-kind="video">动态视频</button></div><label>模型<select id="modelSelect" name="modelId"><option value="">正在读取模型…</option></select></label><div id="modelNote" class="model-note"></div><label id="imagePromptLabel">图像提示词<textarea name="prompt" rows="5" placeholder="构图、人物特征、光线、画面风格"></textarea></label><label id="videoPromptLabel">视频提示词<textarea name="videoPrompt" rows="5" placeholder="主体动作、镜头运动、时间变化"></textarea></label><label>参考图片路径<textarea id="referencePaths" rows="2" placeholder="每行一个本地图片路径"></textarea><span class="field-help">填写此电脑上的图片绝对路径。</span></label><div id="dynamicParams" class="dynamic-params"></div><label id="trimLabel" class="trim-row" hidden><span>输出截取秒数<span class="field-help">留空保留完整视频。截取不降低模型生成费用。</span></span><input id="trimSeconds" type="number" min="0.1" max="120" step="0.1" placeholder="完整"></label><details class="advanced"><summary>更多参数</summary><label>自定义生成参数<textarea id="rawParams" rows="4" spellcheck="false" placeholder="{}"></textarea></label><p class="field-help">用于目录未列出的模型选项；请保持有效 JSON。</p></details><div id="shotError" class="inline-error" hidden></div><button id="deleteShotBtn" class="delete-button" type="button">删除此镜头</button></div><div class="generate-area"><span class="credit-note">提交生成将消耗你的 Design 积分</span><button id="generateBtn" class="primary generate" type="button"><span>生成这一镜</span><span>↗</span></button></div></form></aside>
+  </main>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="confirmDialog"><form method="dialog"><div class="dialog-eyebrow">确认生成</div><h2 id="confirmTitle">生成这一镜</h2><p class="dialog-copy">此操作会提交到 MiniMax Design，并消耗账号积分。</p><div id="confirmDetails" class="confirm-details"></div><p class="dialog-footnote">具体积分以 Design 结算为准。模型支持的时长与最终截取时长可能不同。</p><div class="dialog-actions"><button value="cancel" class="secondary">取消</button><button value="submit" class="primary">确认并生成</button></div></form></dialog>
+  <input type="file" id="projectFile" accept=".json,application/json" hidden><input type="file" id="scriptFile" accept=".txt,.md,text/plain,text/markdown" hidden>
+  <datalist id="shotTypes"><option value="远景"><option value="全景"><option value="中景"><option value="近景"><option value="特写"><option value="大特写"></datalist><datalist id="cameraTypes"><option value="固定"><option value="缓慢推进"><option value="拉远"><option value="横移"><option value="跟拍"><option value="环绕"><option value="升降"></datalist>
+  <script src="/app.js" defer></script>
+</body>
+</html>

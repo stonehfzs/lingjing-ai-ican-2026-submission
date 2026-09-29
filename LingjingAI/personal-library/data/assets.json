@@ -1,0 +1,29 @@
+{
+  "revision": 3,
+  "assets": [
+    {
+      "id": "lib-person-8e94b60c5c3e-813228f17af70130",
+      "name": "吕臣 · 角色形象参考",
+      "kind": "image",
+      "mediaType": "image",
+      "role": "identity",
+      "path": "@APP_ROOT@\\personal-library\\media\\assets\\813228f17af701301f81.png",
+      "mediaUrl": "/media/assets/813228f17af701301f81.png",
+      "thumbnailUrl": "/media/assets/813228f17af701301f81.png",
+      "status": "available",
+      "reviewStatus": "candidate",
+      "sha256": "813228f17af701301f81dffbee6e48cab9615963918938a98ecfd3d448f51751",
+      "size": 776495,
+      "notes": "《苍头》虚构角色，团队已确认展示授权。",
+      "provenance": {
+        "source": "personal-library",
+        "originalFilename": "7790a8af475e1d19c340.png",
+        "origin": null
+      },
+      "createdAt": "2026-09-28T17:06:11+00:00",
+      "updatedAt": "2026-09-28T17:06:11+00:00",
+      "characterId": "person-8e94b60c5c3e",
+      "spokenText": ""
+    }
+  ]
+}

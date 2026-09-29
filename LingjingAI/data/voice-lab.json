@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "draftRevision": 5,
+  "draft": {
+    "description": "十七岁男性，变声后的年轻中音，清亮而不尖，声音偏轻却有实气；咬字朴素直接，句尾收得短，想清楚后再接下一句。普通话生活口语，保留年轻人的生涩和身体感；自然电影对白，单人清洁干声。",
+    "performance": "",
+    "text": "我想走。可走了，那天的事就算过去了？",
+    "name": "少年吕臣 · 灵镜AI试听",
+    "voiceSlotId": "VO_LV_YOUNG",
+    "characterId": "CH_LV",
+    "referenceTakeId": "e65c16a9491a4d1fb6204bd89e05e2b3",
+    "referenceAssetId": "",
+    "referenceText": "我想走。可走了，那天的事就算过去了？",
+    "mode": "reference",
+    "device": "cpu",
+    "seed": 1234,
+    "temperature": 0.9
+  },
+  "takes": [
+    {
+      "id": "e65c16a9491a4d1fb6204bd89e05e2b3",
+      "workspaceId": "cangtou-film-v1-0",
+      "requestId": "voice-lab-dbc3c7c8-dc70-4d51-9fbc-9a37efd8af2a",
+      "status": "succeeded",
+      "stage": "可试听，尚未存入资源库",
+      "progress": {
+        "phase": "complete",
+        "indeterminate": false,
+        "percent": 100
+      },
+      "startedAt": "2026-09-28T16:35:51+00:00",
+      "spec": {
+        "description": "十七岁男性，变声后的年轻中音，清亮而不尖，声音偏轻却有实气；咬字朴素直接，句尾收得短，想清楚后再接下一句。普通话生活口语，保留年轻人的生涩和身体感；自然电影对白，单人清洁干声。",
+        "performance": "对照应过自己的庄贾说真话。“我想走”是承认怕；转折前短停，“可走了”像突然想到后果，后半句是真问，不预先带哭腔。",
+        "text": "我想走。可走了，那天的事就算过去了？",
+        "name": "少年吕臣 · 试听",
+        "voiceSlotId": "VO_LV_YOUNG",
+        "characterId": "CH_LV",
+        "referenceTakeId": "",
+        "referenceAssetId": "",
+        "referenceText": "",
+        "mode": "design",
+        "device": "cuda",
+        "seed": 1234,
+        "temperature": 0.9
+      },
+      "createdAt": "2026-09-28T16:35:51+00:00",
+      "updatedAt": "2026-09-28T16:36:33+00:00",
+      "adoptions": [
+        {
+          "target": "project",
+          "assetId": "voice-lab-e65c16a9491a4d1fb6204bd89e05e2b3-voice_identity",
+          "role": "voice_identity",
+          "name": "少年吕臣 · 试听"
+        }
+      ],
+      "path": "@APP_ROOT@\\media\\voice-lab\\e65c16a9491a4d1fb6204bd89e05e2b3\\preview.wav",
+      "mediaUrl": "/media/voice-lab/e65c16a9491a4d1fb6204bd89e05e2b3/preview.wav",
+      "duration": 5.36,
+      "sha256": "d843e64ad33f78df888f923e1771a58d1dade9671631cfbcd77bfec061c72f98",
+      "metadata": {
+        "mode": "design",
+        "modelId": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+        "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+        "device": "cuda",
+        "attention": "sdpa",
+        "dtype": "bfloat16",
+        "sampleRate": 24000,
+        "duration": 5.36,
+        "peakVramBytes": 4303227392,
+        "peakReservedVramBytes": 4414504960,
+        "elapsedSeconds": 40.357,
+        "seed": 1234,
+        "temperature": 0.9,
+        "offline": true,
+        "networkBlockedTest": true,
+        "peakAmplitude": 0.68359375,
+        "rms": 0.09305553883314133,
+        "reviewStatus": "not_auditioned"
+      }
+    },
+    {
+      "id": "ba6a359fd57246b986ecc02fd131ae99",
+      "workspaceId": "cangtou-film-v1-0",
+      "requestId": "voice-lab-bdeb1315-bbd7-4c26-a05a-d398a6188a2e",
+      "status": "succeeded",
+      "stage": "可试听，尚未存入资源库",
+      "progress": {
+        "phase": "complete",
+        "indeterminate": false,
+        "percent": 100
+      },
+      "startedAt": "2026-09-28T16:36:40+00:00",
+      "spec": {
+        "description": "十七岁男性，变声后的年轻中音，清亮而不尖，声音偏轻却有实气；咬字朴素直接，句尾收得短，想清楚后再接下一句。普通话生活口语，保留年轻人的生涩和身体感；自然电影对白，单人清洁干声。",
+        "performance": "",
+        "text": "我想走。可走了，那天的事就算过去了？",
+        "name": "少年吕臣 · 试听",
+        "voiceSlotId": "VO_LV_YOUNG",
+        "characterId": "CH_LV",
+        "referenceTakeId": "e65c16a9491a4d1fb6204bd89e05e2b3",
+        "referenceAssetId": "",
+        "referenceText": "我想走。可走了，那天的事就算过去了？",
+        "mode": "reference",
+        "device": "cuda",
+        "seed": 1234,
+        "temperature": 0.9
+      },
+      "createdAt": "2026-09-28T16:36:40+00:00",
+      "updatedAt": "2026-09-28T16:37:13+00:00",
+      "adoptions": [],
+      "path": "@APP_ROOT@\\media\\voice-lab\\ba6a359fd57246b986ecc02fd131ae99\\preview.wav",
+      "mediaUrl": "/media/voice-lab/ba6a359fd57246b986ecc02fd131ae99/preview.wav",
+      "duration": 4.800042,
+      "sha256": "189c76fb64768d3ba76fbf574e9a71c21d830f46c96e225e86035cd9c0729afe",
+      "metadata": {
+        "mode": "reference",
+        "modelId": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+        "revision": "5d83992436eae1d760afd27aff78a71d676296fc",
+        "device": "cuda",
+        "attention": "sdpa",
+        "dtype": "bfloat16",
+        "sampleRate": 24000,
+        "duration": 4.800041666666667,
+        "peakVramBytes": 2435153408,
+        "peakReservedVramBytes": 2571108352,
+        "elapsedSeconds": 31.215,
+        "seed": 1234,
+        "temperature": 0.9,
+        "offline": true,
+        "networkBlockedTest": true,
+        "peakAmplitude": 0.6015625,
+        "rms": 0.08696997165679932,
+        "reviewStatus": "not_auditioned"
+      }
+    },
+    {
+      "id": "a79893165792444c81dd8f3ecef5d592",
+      "workspaceId": "cangtou-film-v1-0",
+      "requestId": "voice-lab-cedf7906-53cf-4f8a-a6c5-697050d613d7",
+      "status": "succeeded",
+      "stage": "可试听，尚未存入资源库",
+      "progress": {
+        "phase": "complete",
+        "indeterminate": false,
+        "percent": 100
+      },
+      "startedAt": "2026-09-29T05:34:40+00:00",
+      "spec": {
+        "description": "十七岁男性，变声后的年轻中音，清亮而不尖，声音偏轻却有实气；咬字朴素直接，句尾收得短，想清楚后再接下一句。普通话生活口语，保留年轻人的生涩和身体感；自然电影对白，单人清洁干声。",
+        "performance": "",
+        "text": "我想走。可走了，那天的事就算过去了？",
+        "name": "少年吕臣 · 灵镜AI试听",
+        "voiceSlotId": "VO_LV_YOUNG",
+        "characterId": "CH_LV",
+        "referenceTakeId": "e65c16a9491a4d1fb6204bd89e05e2b3",
+        "referenceAssetId": "",
+        "referenceText": "我想走。可走了，那天的事就算过去了？",
+        "mode": "reference",
+        "device": "cpu",
+        "seed": 1234,
+        "temperature": 0.9
+      },
+      "createdAt": "2026-09-29T05:34:40+00:00",
+      "updatedAt": "2026-09-29T05:35:44+00:00",
+      "adoptions": [
+        {
+          "target": "project",
+          "assetId": "voice-lab-a79893165792444c81dd8f3ecef5d592-dialogue_performance",
+          "role": "dialogue_performance",
+          "name": "少年吕臣 · 灵镜AI试听"
+        }
+      ],
+      "path": "@APP_ROOT@\\media\\voice-lab\\a79893165792444c81dd8f3ecef5d592\\preview.wav",
+      "mediaUrl": "/media/voice-lab/a79893165792444c81dd8f3ecef5d592/preview.wav",
+      "duration": 4.4,
+      "sha256": "b371a41da26b2649e353a0efc448b03dbc7671ab235ac54d092d9c159639b148",
+      "metadata": {
+        "mode": "reference",
+        "modelId": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+        "revision": "5d83992436eae1d760afd27aff78a71d676296fc",
+        "device": "cpu",
+        "attention": "sdpa",
+        "dtype": "float32",
+        "sampleRate": 24000,
+        "duration": 4.4,
+        "peakVramBytes": null,
+        "peakReservedVramBytes": null,
+        "elapsedSeconds": 61.462,
+        "seed": 1234,
+        "temperature": 0.9,
+        "offline": true,
+        "networkBlockedTest": true,
+        "peakAmplitude": 0.624494194984436,
+        "rms": 0.08924752473831177,
+        "reviewStatus": "not_auditioned"
+      }
+    }
+  ]
+}

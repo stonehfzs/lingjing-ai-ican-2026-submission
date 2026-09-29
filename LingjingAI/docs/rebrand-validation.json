@@ -1,0 +1,14 @@
+{
+  "name": "灵镜AI",
+  "date": "2026-09-29",
+  "logoSource": "用户提供并确认图中文字",
+  "sourcePngUnchanged": true,
+  "tests": 203,
+  "narrationReplaced": [
+    "02",
+    "11"
+  ],
+  "recordings": "重新录制本机工作台",
+  "voiceDevice": "cpu",
+  "paidCloudGeneration": false
+}

@@ -1,0 +1,7 @@
+{
+  "ready": false,
+  "status": "not_installed",
+  "message": "源码评审包未携带模型权重；按MODEL_SETUP.md配置后再生成。",
+  "modelId": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "validatedDevices": []
+}
